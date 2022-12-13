@@ -83,6 +83,7 @@ const App = ({notes}) => {
     <form>
       <input value = {newNote} onChange = {changeNoteValue}/>
     </form>
+    {!v &&
     <select value = {opt} onChange = {onChangeSelect}>
       <option value = "ascendingyear">Ascending (by year)</option>
       <option value = "descendingyear">Descending (by year)</option>
@@ -91,6 +92,7 @@ const App = ({notes}) => {
       <option value = "ascendingtime">Ascending (by runtime)</option>
       <option value = "descendingtime">Descending (by runtime)</option>
     </select>
+    }   
     {note.map(not => <Displayer vari = {v} notes = {not} search = {newNote}/>)}
     </>
   )
