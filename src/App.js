@@ -35,11 +35,11 @@ const App = ({notes}) => {
     }
     else if (event.target.value == "ascendingtime")
     {
-      setNote(note.sort(function(a, b){return a.release_date - b.release_date}))
+      setNote(note.sort(function(a, b){return a.running_time - b.running_time}))
     }
     else if (event.target.value == "descendingtime")
     {
-      setNote(note.sort(function(a, b){return b.release_date - a.release_date}))
+      setNote(note.sort(function(a, b){return b.running_time - a.running_time}))
     }
   }
   return(
