@@ -3,6 +3,11 @@ html{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+.box{
+    position: relative;
+    bottom: 20px;
+}
+
 .infoBox:hover{
     box-shadow: 2px 2px 2px 2px black;
 }
