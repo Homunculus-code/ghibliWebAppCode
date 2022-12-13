@@ -5,7 +5,7 @@ html{
 
 .box{
     position: relative;
-    bottom: 50px;
+    bottom: 20px;
 }
 
 .infoBox:hover{
