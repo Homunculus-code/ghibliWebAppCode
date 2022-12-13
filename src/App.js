@@ -19,23 +19,11 @@ const App = ({notes}) => {
     setOpts(event.target.value);
     if (event.target.value == "descendingyear")
     {
-      setNote(note.sort((a, b) => {
-        if (a.release_date > b.release_date)
-            return -1;
-        if (a.release_date < b.release_date)
-            return 1;
-        return 0;
-    }))
+      setNote(note.sort(function(a, b){return b.release_date - a.release_date}))
     }
     else if (event.target.value == "ascendingyear")
     {
-      setNote(note.sort((a, b) => {
-        if (a.release_date < b.release_date)
-            return -1;
-        if (a.release_date > b.release_date)
-            return 1;
-        return 0;
-    }))
+            setNote(note.sort(function(a, b){return a.release_date - b.release_date}))
     }
     else if (event.target.value == "ascendingrating")
     {
@@ -47,23 +35,11 @@ const App = ({notes}) => {
     }
     else if (event.target.value == "ascendingtime")
     {
-      setNote(note.sort((a, b) => {
-        if (a.running_time < b.running_time)
-            return -1;
-        if (a.running_time > b.running_time)
-            return 1;
-        return 0;
-    }))
+      setNote(note.sort(function(a, b){return a.release_date - b.release_date}))
     }
     else if (event.target.value == "descendingtime")
     {
-      setNote(note.sort((a, b) => {
-        if (a.running_time > b.running_time)
-            return -1;
-        if (a.running_time < b.running_time)
-            return 1;
-        return 0;
-    }))
+      setNote(note.sort(function(a, b){return b.release_date - a.release_date}))
     }
   }
   return(
