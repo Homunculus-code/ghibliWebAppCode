@@ -39,7 +39,7 @@ const App = ({notes}) => {
     }
     else if (event.target.value == "ascendingrating")
     {
-      setNote(points.sort(function(a, b){return b.rt_score - a.rt_score}))
+      setNote(note.sort(function(a, b){return b.rt_score - a.rt_score}))
     }
     else if (event.target.value == "descendingrating")
     {
