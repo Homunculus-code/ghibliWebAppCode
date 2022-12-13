@@ -39,17 +39,11 @@ const App = ({notes}) => {
     }
     else if (event.target.value == "ascendingrating")
     {
-      setNote(note.sort(function(a, b){return b.rt_score - a.rt_score}))
+      setNote(note.sort(function(a, b){return a.rt_score - b.rt_score}))
     }
     else if (event.target.value == "descendingrating")
     {
-      setNote(note.sort((a, b) => {
-        if (a.rt_score > b.rt_score)
-            return -1;
-        if (a.rt_score < b.rt_score)
-            return 1;
-        return 0;
-    }))
+      setNote(note.sort(function(a, b){return b.rt_score - a.rt_score}))
     }
     else if (event.target.value == "ascendingtime")
     {
