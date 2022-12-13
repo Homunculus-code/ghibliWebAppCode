@@ -5,7 +5,6 @@ html{
 
 .box{
     position: relative;
-    bottom: 30px;
 }
 
 .infoBox:hover{
@@ -19,6 +18,7 @@ html{
     box-sizing: border-box;
     background-color: #1c143c;
     margin: 10px;
+    border: 10px 10px 0px 10px;
     border-radius: 10px;
     padding: 0px 30px 0px 30px;
     width: 700px;
