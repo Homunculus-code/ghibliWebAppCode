@@ -137,7 +137,7 @@ const Info = ({film}) => {
         </div>
       </div>
       <div className = 'box'>
-        <div style = {{display: "flex", flexDirection: "column", position: "relative", bottom: "30px"}}>
+        <div style = {{display: "flex", flexDirection: "column"}}>
           <div>
             <h6 style = {{color: "#ef8df0"}}>{film.original_title}</h6>
             <img src = {film.movie_banner} height = {250} width = {450}/>
